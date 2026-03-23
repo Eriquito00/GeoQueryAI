@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO QUERY AI</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <h1>GEO QUERY AI</h1>
+    <section class="query_section">
+        <label for="geo-query-input">Fes una query a la IA per obtenir ubicacions:</label>
+        <div class="query_input">
+            <input type="text" name="geo-query-input" id="geoQueryInput" placeholder="Introdueix una query...">
+            <button class="query_button" id="geoQueryButton">Submit</button>                   
+        </div>
+    </section>
+    <section class="map">
+        <iframe
+            title="Mapa de Google Maps"
+            src="https://www.google.com/maps?output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</body>
+</html>
