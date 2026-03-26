@@ -16,7 +16,7 @@ export class OpenAIClient {
     ): Promise<string> {
         const response =
             await this.client.chat.completions.create({
-                model: 'gpt-4o-mini',
+                model: 'gpt-4.1',
                 messages: [
                     {
                         role: 'system',

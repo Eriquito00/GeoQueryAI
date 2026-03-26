@@ -20,7 +20,7 @@ REGLAS CRÍTICAS:
 6. Si hay múltiples ubicaciones, devuelve un array con todas
 
 SI LA CONSULTA NO ES SOBRE UBICACIONES:
-{"error": "Query inválida: la consulta no menciona ubicaciones geográficas"}
+{"error": "Query inválida: la consulta no menciona ubicaciones geográficas o no se pueden representar"}
 
 EJEMPLOS VÁLIDOS:
 Consulta: "¿Dónde está París?"
@@ -33,4 +33,4 @@ Consulta: "Restaurantes en Barcelona"
 ]
 
 Consulta: "¿Cuál es tu color favorito?"
-{"error": "Query inválida: la consulta no menciona ubicaciones geográficas"}
+{"error": "Query inválida: la consulta no menciona ubicaciones geográficas o no se pueden representar"}
