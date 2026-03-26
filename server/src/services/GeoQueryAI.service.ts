@@ -53,13 +53,13 @@ export class GeoQueryAIService {
         Respuesta: {"error": "Esta consulta no trata sobre ubicaciones geográficas"}
     `;
 
-    async processQuery(userQuery: string): Promise<string> {
+    async processQuery(userQuery: string): Promise<JSON> {
         const openAIClient = new OpenAIClient();
         const response = await openAIClient.query(
             userQuery,
             this.AI_RULES
         );
 
-        return response;
+        return JSON.parse(response);
     }
 }
