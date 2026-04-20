@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>GEO QUERY AI</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script type="module" src="./js/script.js"></script>
+    </head>
+    <body>
+        <h1>GEO QUERY AI</h1>
+        <div class="content">
+            <section class="map" id="mapContainer"></section>
+            <section class="query_section">
+                <label for="geo-query-input"
+                    >Fes una query a la IA per obtenir
+                    ubicacions:</label
+                >
+                <div class="query_input">
+                    <input
+                        type="text"
+                        name="geo-query-input"
+                        id="geoQueryInput"
+                        placeholder="Introdueix una query..."
+                        maxlength="50"
+                    />
+                    <button
+                        class="query_button"
+                        id="geoQueryButton"
+                    >
+                        Submit
+                    </button>
+                    <div id="geoQueryResponses"></div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
